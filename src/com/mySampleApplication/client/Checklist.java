@@ -1,5 +1,7 @@
 package com.mySampleApplication.client;
 
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,7 +10,7 @@ import java.util.List;
  */
 public interface Checklist {
 
-    long getId();
+    Long getId();
 
     String getNsc();
     void setNsc(String nsc);
@@ -22,6 +24,7 @@ public interface Checklist {
     String getTechnician();
     void setTechnician(String technician);
 
+    @JsonTypeInfo(use = JsonTypeInfo.Id.CLASS, include = JsonTypeInfo.As.WRAPPER_ARRAY, property = "class", defaultImpl = CheckResultTo.class)
     List<CheckResult> getCheckResults();
 
     void setCheckResults(List<CheckResult> checkResults);

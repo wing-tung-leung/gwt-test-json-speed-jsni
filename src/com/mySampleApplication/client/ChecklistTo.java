@@ -7,7 +7,7 @@ import java.util.List;
  */
 public class ChecklistTo  {
 
-    private long id;
+    private Long id;
     private String advisor;
     private String technician;
     private String dealer;
@@ -16,7 +16,7 @@ public class ChecklistTo  {
     private List<CheckResultTo> checkResults;
 
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 

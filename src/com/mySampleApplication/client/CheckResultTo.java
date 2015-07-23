@@ -7,15 +7,15 @@ import java.math.BigDecimal;
  */
 public class CheckResultTo implements CheckResult {
 
-    private String status;
+    private ResultStatus status;
     private String comment;
     private BigDecimal amount;
 
-    public String getStatus() {
+    public ResultStatus getStatus() {
         return status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(ResultStatus status) {
         this.status = status;
     }
 

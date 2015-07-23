@@ -1,14 +1,17 @@
 package com.mySampleApplication.client;
 
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
+
 import java.math.BigDecimal;
 
 /**
  * Created by tung on 23/07/15.
  */
+//@JsonTypeInfo(use = JsonTypeInfo.Id.CLASS, include = JsonTypeInfo.As.WRAPPER_OBJECT, property = "class", defaultImpl = CheckResultTo.class)
 public interface CheckResult {
 
-    String getStatus();
-    void setStatus(String status);
+    ResultStatus getStatus();
+    void setStatus(ResultStatus status);
 
     String getComment();
     void setComment(String comment);
