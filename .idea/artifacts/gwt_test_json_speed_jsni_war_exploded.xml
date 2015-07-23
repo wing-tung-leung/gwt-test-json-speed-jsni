@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="gwt-test-json-speed-jsni:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/gwt_test_json_speed_jsni_war_exploded.war</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="gwt-test-json-speed-jsni/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="gwt-test-json-speed-jsni" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$USER_HOME$/opt/gwt-2.6.1/gwt-servlet.jar" />
+        </element>
+      </element>
+      <element id="gwt-compiler-output" facet="gwt-test-json-speed-jsni/gwt/GWT" />
+    </root>
+  </artifact>
+</component>
