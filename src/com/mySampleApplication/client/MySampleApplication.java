@@ -20,9 +20,6 @@ import java.util.List;
  */
 public class MySampleApplication implements EntryPoint {
 
-    /**
-     * This is the entry point method.
-     */
     public void onModuleLoad() {
         final Button button = new Button("Click me");
         final Label label = new Label();
