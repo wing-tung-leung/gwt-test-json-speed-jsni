@@ -20,12 +20,14 @@ import java.util.List;
  */
 public class MySampleApplication implements EntryPoint {
 
-    public static final int CHECK_RESULT_COUNT = 1000;
+    public static final int CHECK_RESULT_COUNT = 4000;
 
     public void onModuleLoad() {
         final Button button = new Button("Start JSON encoding tests");
         final Label label = new Label();
         final TextArea textArea1 = new TextArea();
+        textArea1.setHeight("290px");
+        textArea1.setWidth("500px");
 
         final ChecklistFactory f = GWT.create(ChecklistFactory.class);
 
@@ -85,7 +87,7 @@ public class MySampleApplication implements EntryPoint {
             private void setCheckResultAttributes(CheckResult cr, int i) {
                 cr.setStatus(i % 2 ==0 ? ResultStatus.OK : ResultStatus.NOK);
                 cr.setComment("comment " + i);
-                cr.setAmount(new BigDecimal("10." + i).setScale(3));
+                cr.setAmount(new BigDecimal("10." + i).setScale(4));
             }
 
             /** Superfast serialization, only conversion of BigDecimal bit slow. */

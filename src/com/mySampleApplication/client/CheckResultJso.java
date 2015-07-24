@@ -4,9 +4,6 @@ import com.google.gwt.core.client.JavaScriptObject;
 
 import java.math.BigDecimal;
 
-/**
- * Created by tung on 23/07/15.
- */
 public class CheckResultJso extends JavaScriptObject implements CheckResult {
 
     protected CheckResultJso() {
